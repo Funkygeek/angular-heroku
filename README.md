@@ -1,4 +1,4 @@
-# heruko-package
+# angular-heroku
 
 This node application prepares an Angular-7 application to be able to be used on the 
 Heroku environmnet.
