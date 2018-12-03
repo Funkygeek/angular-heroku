@@ -42,7 +42,7 @@ app.listen(process.env.PORT || 8080);`;
 package_file.dependencies["@angular/cli"] = package_file.devDependencies["@angular/cli"];
 package_file.dependencies["@angular/compiler-cli"] = package_file.devDependencies["@angular/compiler-cli"];
 package_file.dependencies["typescript"]= package_file.devDependencies["typescript"];
-package_file.scripts["postinstall"] = "ng build --aot -prod";
+package_file.scripts["postinstall"] = "ng build --aot --prod";
 package_file["engines"] = {"node":"8.12.0", "npm":"6.4.1"};
 package_file.devDependencies["enhanced-resolve"]="3.3.0";
 package_file.dependencies["express"] = "^4.16.4";
