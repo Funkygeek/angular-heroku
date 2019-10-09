@@ -44,8 +44,8 @@ package_file.dependencies["@angular/compiler-cli"] = package_file.devDependencie
 package_file.dependencies["typescript"]= package_file.devDependencies["typescript"];
 package_file.scripts["postinstall"] = "ng build --aot --prod";
 package_file["engines"] = {"node":"11.9.0", "npm":"6.11.3"};
-package_file.devDependencies["enhanced-resolve"]="3.3.0";
-package_file.dependencies["express"] = "^4.16.4";
+package_file.devDependencies["enhanced-resolve"]="4.1.1";
+package_file.dependencies["express"] = "^4.17.1";
 package_file.dependencies["path"] = "^0.12.7";
 package_file.scripts["start"] = "node server.js";
 
