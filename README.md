@@ -20,7 +20,7 @@ It is assumed your package already has
       };
       
 * Copies `"typescript"` from `devDependencies` to `dependencies`
-* Install `install enhanced-resolve@3.3.0`
+* Install `install enhanced-resolve@4.1.0`
 * Install Express server with `npm install express path --save`
 * Creates the `server.js` file with the correct dist directory
 * Change the `"start"` command to `node server.js`
