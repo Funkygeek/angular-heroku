@@ -14,10 +14,10 @@ It is assumed your package already has
 * Adds `"postinstall": "ng build --aot -prod"` to `scripts`
 * Adds Node and NPM engines
       
-      "engines": {
-        "node": "6.11.0",
-        "npm": "3.10.10"
-      }
+      "engines":{
+            "node":"11.9.0", 
+            "npm":"6.11.3"
+      };
       
 * Copies `"typescript"` from `devDependencies` to `dependencies`
 * Install `install enhanced-resolve@3.3.0`
