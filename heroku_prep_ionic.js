@@ -20,16 +20,30 @@ const writeOutTheFile = (filename, data) => {
 
 const app_name = package_file.name;
 const server_template = `
-//Install express server
 const express = require('express');
-const path = require('path');
+const morgan = require('morgan');
+const bodyParser = require('body-parser');  
+const cors = require('cors');
 const app = express();
+
+app.use(morgan('dev'));                                        
+app.use(bodyParser.urlencoded({'extended':'true'}));            
+app.use(bodyParser.json());                                     
+app.use(cors());
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Methods', 'DELETE, PUT');
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // Serve only the static files from the dist directory
 app.use(express.static(__dirname + '/www'));
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/www/index.html'));
-});
+app.use(express.static('www'));
+
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);`;
 
