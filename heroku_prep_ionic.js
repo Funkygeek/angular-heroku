@@ -21,12 +21,10 @@ const writeOutTheFile = (filename, data) => {
 const app_name = package_file.name;
 const server_template = `
 const express = require('express');
-const morgan = require('morgan');
 const bodyParser = require('body-parser');  
 const cors = require('cors');
 const app = express();
 
-app.use(morgan('dev'));                                        
 app.use(bodyParser.urlencoded({'extended':'true'}));            
 app.use(bodyParser.json());                                     
 app.use(cors());
