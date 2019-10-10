@@ -38,10 +38,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// Serve only the static files from the dist directory
-app.use(express.static(__dirname + '/www'));
-app.get('/*', function(req,res) {
-    
 app.use(express.static('www'));
 
 // Start the app by listening on the default Heroku port
@@ -66,6 +62,7 @@ package_file["engines"] = {"node":"11.9.0", "npm":"6.11.3"};
 package_file.devDependencies["enhanced-resolve"]="4.1.1";
 package_file.dependencies["express"] = "^4.17.1";
 package_file.dependencies["path"] = "^0.12.7";
+package_file.dependencies["ionic"] = "^5.4.2"
 package_file.scripts["start"] = "node server.js";
 
 // Output the files
