@@ -41,7 +41,7 @@ package_file.dependencies["@angular-devkit/architect"] = package_file.devDepende
 package_file.dependencies["@angular-devkit/build-angular"] = package_file.devDependencies["@angular-devkit/build-angular"]
 package_file.dependencies["@angular-devkit/core"] = package_file.devDependencies["@angular-devkit/core"]
 package_file.dependencies["@angular-devkit/schematics"] = package_file.devDependencies["@angular-devkit/schematics"]
-package_file.dependencies["@angular/compiler"] = package_file.devDependencies["@angular/compiler"]
+// package_file.dependencies["@angular/compiler"] = package_file.devDependencies["@angular/compiler"]
 package_file.dependencies["@angular/language-service"] = package_file.devDependencies["@angular/language-service"]
 package_file.dependencies["@ionic/angular-toolkit"] = package_file.devDependencies["@ionic/angular-toolkit"] 
  
