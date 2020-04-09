@@ -41,13 +41,13 @@ package_file.dependencies["@angular-devkit/architect"] = package_file.devDepende
 package_file.dependencies["@angular-devkit/build-angular"] = package_file.devDependencies["@angular-devkit/build-angular"]
 package_file.dependencies["@angular-devkit/core"] = package_file.devDependencies["@angular-devkit/core"]
 package_file.dependencies["@angular-devkit/schematics"] = package_file.devDependencies["@angular-devkit/schematics"]
-package_file.dependencies["@angular/compiler"] = package_file.devDependencies["@angular/compiler"]
+// package_file.dependencies["@angular/compiler"] = package_file.devDependencies["@angular/compiler"]
 package_file.dependencies["@angular/language-service"] = package_file.devDependencies["@angular/language-service"]
 package_file.dependencies["@ionic/angular-toolkit"] = package_file.devDependencies["@ionic/angular-toolkit"] 
  
     
 package_file.scripts["postinstall"] = "ng build --aot --prod";
-package_file["engines"] = {"node":"12.16.2", "npm":"6.13.4"};
+package_file["engines"] = {"node":"12.x", "npm":"6.x"};
 package_file.devDependencies["enhanced-resolve"]="4.1.1";
 package_file.dependencies["express"] = "^4.17.1";
 package_file.dependencies["path"] = "^0.12.7";
