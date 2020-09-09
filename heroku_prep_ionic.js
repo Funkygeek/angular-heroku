@@ -48,10 +48,10 @@ package_file.dependencies["@ionic/angular-toolkit"] = package_file.devDependenci
     
 package_file.scripts["postinstall"] = "ng build --aot --prod";
 package_file["engines"] = {"node":"12.x", "npm":"6.x"};
-package_file.devDependencies["enhanced-resolve"]="4.1.1";
+package_file.devDependencies["enhanced-resolve"]="^4.3.0";
 package_file.dependencies["express"] = "^4.17.1";
 package_file.dependencies["path"] = "^0.12.7";
-package_file.dependencies["@ionic/cli"] = "^6.5.0"
+package_file.dependencies["@ionic/cli"] = "^6.11.8"
 package_file.scripts["start"] = "node server.js";
 
 // Output the files
