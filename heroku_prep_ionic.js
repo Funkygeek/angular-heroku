@@ -46,7 +46,7 @@ package_file.dependencies["@angular/language-service"] = package_file.devDepende
 package_file.dependencies["@ionic/angular-toolkit"] = package_file.devDependencies["@ionic/angular-toolkit"] 
  
     
-package_file.scripts["postinstall"] = "ng build --aot --prod";
+package_file.scripts["build"] = "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build -c test";
 package_file["engines"] = {"node":"12.x", "npm":"6.x"};
 package_file.devDependencies["enhanced-resolve"]="^4.3.0";
 package_file.dependencies["express"] = "^4.17.1";
