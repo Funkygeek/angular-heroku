@@ -43,8 +43,8 @@ package_file.dependencies["@angular/cli"] = package_file.devDependencies["@angul
 package_file.dependencies["@angular/compiler-cli"] = package_file.devDependencies["@angular/compiler-cli"];
 package_file.dependencies["typescript"]= package_file.devDependencies["typescript"];
 package_file.scripts["build"] = "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build -c test";
-package_file["engines"] = {"node":"12.x", "npm":"6.x"};
-package_file.devDependencies["enhanced-resolve"]="4.1.1";
+package_file["engines"] = {"node":"14.x", "npm":"6.x"};
+package_file.devDependencies["enhanced-resolve"]="5.7.0";
 package_file.dependencies["express"] = "^4.17.1";
 package_file.dependencies["path"] = "^0.12.7";
 package_file.scripts["start"] = "node server.js";
