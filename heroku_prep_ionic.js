@@ -21,11 +21,10 @@ const writeOutTheFile = (filename, data) => {
 const app_name = package_file.name;
 const server_template = `
 const express = require('express');
-const bodyParser = require('body-parser');  
 const app = express();
 
-app.use(bodyParser.urlencoded({'extended':'true'}));            
-app.use(bodyParser.json());                                     
+app.use(express.urlencoded({'extended':'true'}));            
+app.use(express.json());                                     
 
 app.use(express.static('www'));
 
