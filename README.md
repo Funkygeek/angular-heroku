@@ -1,7 +1,7 @@
 # angular-heroku
 
-This node application prepares an Angular-7 application to be able to be used on the 
-Heroku environmnet.
+This node application prepares an Angular application to be able to be used on the 
+Heroku environment.
 
 ### Assumptions
 It is assumed your package already has 
