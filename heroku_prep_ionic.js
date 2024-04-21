@@ -46,11 +46,11 @@ package_file.dependencies["@ionic/angular-toolkit"] = package_file.devDependenci
  
     
 package_file.scripts["build"] = "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build %config%";
-package_file["engines"] = {"node":"16.x", "npm":"8.x"};
+package_file["engines"] = {"node":"18.x", "npm":"9.x"};
 package_file.devDependencies["enhanced-resolve"]="^5.8.0";
 package_file.dependencies["express"] = "^4.17.1";
 package_file.dependencies["path"] = "^0.12.7";
-package_file.dependencies["@ionic/cli"] = "^6.20.1"
+package_file.dependencies["@ionic/cli"] = "^7.2.0"
 package_file.scripts["start"] = "node server.js";
 
 // Output the files
