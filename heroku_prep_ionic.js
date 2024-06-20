@@ -21,12 +21,18 @@ const writeOutTheFile = (filename, data) => {
 const app_name = package_file.name;
 const server_template = `
 const express = require('express');
+const path = require('path');
+
 const app = express();
 
 app.use(express.urlencoded({'extended':'true'}));            
 app.use(express.json());                                     
 
-app.use(express.static('www'));
+app.use(express.static(path.join(__dirname, 'www')));
+
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'www', 'index.html'));
+});
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);`;
