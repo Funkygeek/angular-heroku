@@ -43,7 +43,7 @@ package_file.dependencies["@angular/cli"] = package_file.devDependencies["@angul
 package_file.dependencies["@angular/compiler-cli"] = package_file.devDependencies["@angular/compiler-cli"];
 package_file.dependencies["typescript"]= package_file.devDependencies["typescript"];
 package_file.scripts["build"] = "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build %config%";
-package_file["engines"] = {"node":"18.x", "npm":"9.x"};
+package_file["engines"] = {"node":"22.x", "npm":"10.x"};
 package_file.devDependencies["enhanced-resolve"]="^5.8.0";
 package_file.dependencies["express"] = "^4.17.1";
 package_file.dependencies["path"] = "^0.12.7";
